@@ -1,0 +1,71 @@
+body {
+  box-sizing: border-box;
+  min-width: 400px;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 17px;
+  font-style: normal;
+  background: #ffffff;
+}
+
+body * {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #105a8f;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  text-shadow: 0 1px 0 #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  padding: 5px 30px 5px 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px 0;
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #ffffff 0%, #eceded 37%, #ffffff 100%);
+  transform: skew(-20deg);
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 0px #689cbe; 
+}
+
+.button span {
+  display: inline-block;
+  margin-top: -1px;
+  border-bottom: 1px solid #105a8f;
+  text-decoration: none;
+  vertical-align: top;
+  transform: skew(20deg);
+}
+
+.button:hover span {
+  border-bottom: none;
+}
+
+.button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  width: 19px;
+  height: 12px;
+  background: url("../img/arrow_enter.png") no-repeat center;
+  transform: skew(20deg);
+}

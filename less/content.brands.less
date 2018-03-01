@@ -1,0 +1,221 @@
+.brands {
+	margin-top: 40px;
+	padding-bottom: 35px;
+}
+
+.brands__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 90px;
+
+	@media screen and (max-width: 999px) {
+		padding-right: 0;
+	}
+}
+
+.brands__title {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 18px;
+
+	@media screen and (max-width: 999px) {
+		width: 55%;
+	};
+}
+
+.brands__logo {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.brands__logo-list {
+	min-width: 50%;
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	@media screen and (max-width: 999px) {
+		flex-wrap: wrap;
+	}
+}
+
+.brands__logo-item {
+	width: 25%;
+	height: 64px;
+	list-style-type: none;
+	flex-grow: 1;
+
+	@media screen and (max-width: 999px) {
+		width: 50%;
+	}
+}
+
+.brands__logo-img {
+	position: relative;
+	background-image: url("../img/sprite_brand.png");
+	background-repeat: no-repeat;
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.brands__logo-img--brand-1 {
+	max-width: 73px;
+	height: 38px;
+	background-position: -5px -5px;
+}
+
+.brands__logo-img--brand-2 {
+	max-width: 93px;
+	height: 18px;
+	background-position: -5px -278px; 
+}
+
+.brands__logo-img--brand-3 {
+	max-width: 35px;
+	height: 43px;
+	background-position: -5px -306px; 
+}
+
+.brands__logo-img--brand-4 {
+	max-width: 93px;
+	height: 16px;
+	background-position: -5px -359px; 
+}
+
+.brands__logo-img--brand-5 {
+	max-width: 54px;
+	height: 28px;
+	background-position: -5px -537px;
+}
+
+.brands__logo-img--brand-6 {
+	max-width: 105px;
+	height: 23px;
+	background-position: -5px -53px; 
+}
+
+.brands__logo-img--brand-7 {
+	max-width: 73px;
+	height: 16px;
+	background-position: -5px -86px;
+}
+
+.brands__logo-img--brand-8 {
+	max-width: 79px;
+	height: 27px;
+	background-position: -5px -112px;
+}
+
+.brands__logo-img--brand-9 {
+	max-width: 67px;
+	height: 27px;
+	background-position: -5px -385px;  
+}
+
+.brands__logo-img--brand-10 {
+	max-width: 57px;
+	height: 23px;
+	background-position: -5px -422px;
+}
+
+.brands__logo-img--brand-11 {
+	max-width: 52px;
+	height: 36px;
+	background-position: -5px -455px; 
+}
+
+.brands__logo-img--brand-12 {
+	max-width: 77px;
+	height: 26px;
+	background-position: -5px -501px; 
+}
+
+.brands__logo-img--brand-13 {
+	max-width: 103px;
+	height: 27px;
+	background-position: -5px -149px; 
+}
+
+.brands__logo-img--brand-14 {
+	max-width: 80px;
+	height: 17px;
+	background-position: -5px -186px; 
+}
+
+.brands__logo-img--brand-15 {
+	max-width: 54px;
+	height: 15px;
+	background-position: -5px -213px; 
+}
+
+.brands__logo-img--brand-16 {
+	max-width: 112px;
+	height: 30px;
+	background-position: -5px -238px; 
+}
+
+.brands__logo-img:hover {
+	transition: opacity 0.3s linear;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.brands__logo-list:nth-of-type(1) .brands__logo-item:nth-child(1),
+.brands__logo-list:nth-of-type(1) .brands__logo-item:nth-child(2),
+.brands__logo-list:nth-of-type(1) .brands__logo-item:nth-child(3),
+.brands__logo-list:nth-of-type(1) .brands__logo-item:nth-child(4),
+.brands__logo-list:nth-of-type(2) .brands__logo-item:nth-child(1),
+.brands__logo-list:nth-of-type(2) .brands__logo-item:nth-child(2),
+.brands__logo-list:nth-of-type(2) .brands__logo-item:nth-child(3),
+.brands__logo-list:nth-of-type(2) .brands__logo-item:nth-child(4) {
+	border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 999px) {
+	.brands__logo-list:nth-of-type(3) .brands__logo-item:nth-child(1),
+	.brands__logo-list:nth-of-type(3) .brands__logo-item:nth-child(2),
+	.brands__logo-list:nth-of-type(4) .brands__logo-item:nth-child(1),
+	.brands__logo-list:nth-of-type(4) .brands__logo-item:nth-child(2) {
+		border-bottom: 1px solid #ddd;
+	};
+}
+
+.brands__link {
+	display: flex;
+	justify-content: space-around;
+	padding: 30px 0 35px;
+	border-bottom: 1px solid #e6e6e6;
+
+	@media screen and (max-width: 999px) {
+		flex-wrap: wrap;
+		padding-left: 40px;
+	} 
+}
+
+.brands__link-list {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	@media screen and (max-width: 999px) {
+		width: 25%;
+	} 
+}
+
+.brands__link-item {
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 20px;
+
+	@media screen and (max-width: 999px) {
+		font-size: 15px;
+		line-height: 26px;
+	}; 
+}
