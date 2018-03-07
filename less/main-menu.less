@@ -175,6 +175,10 @@
 
 .drop-menu__column {
 	padding-right: 20px;
+
+	@media screen and (max-width: 599px){
+       width: 50%;
+    };
 }
 
 .drop-menu__column:last-of-type {
@@ -205,6 +209,10 @@
 	line-height: 18px;
 	font-weight: 600;
 	color: #333333;
+
+	@media screen and (max-width: 599px){
+       min-width: 250px;
+    };
 }
 
 .menu-list__button {
@@ -260,4 +268,8 @@
  	left: 0;
  	padding: 15px 15px;
  	box-shadow: 0 0 15px rgba(5, 6, 6, 0.7);
+
+ 	@media screen and (max-width: 599px){
+       flex-wrap: wrap;
+    };
  } 
